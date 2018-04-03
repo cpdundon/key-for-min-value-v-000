@@ -7,6 +7,7 @@ def key_for_min_value(name_hash)
   name_hash.each do |k, v|
     if first
       rtn = k
+      first = false
     elsif v < name_hash[rtn] 
       rtn = k
     end
